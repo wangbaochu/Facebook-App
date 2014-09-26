@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/display"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:background="@color/white"
+    android:padding="@dimen/padding"
+    android:textSize="@dimen/status_header_size"
+    android:text="@string/status_list_header_text" >
+</TextView>

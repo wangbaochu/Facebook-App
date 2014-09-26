@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Animations -->
+    <!-- 350ms is what iPhone apps use (iOS default) -->
+    <integer name="animation_default_duration">350</integer>
+    <integer name="edit_box_lines">2</integer>
+</resources>

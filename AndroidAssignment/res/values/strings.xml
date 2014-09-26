@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidAssignment</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="facebook_app_id">843334189032273</string>
+    
+    <string name="manual_location_settings_message">Please config your location for the device manually</string>
+    <string name="manual_location_settings_title">Manual Location Settings</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_cancel_button">Cancel</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="welcome_user">Welcome to my app, please login.\n Once login, please click menu to logout.</string>
+    <string name="settings">Settings</string>
+    
+    <string name="send_message">Send</string>
+    <string name="clear_message">Clear</string>
+    <string name="click_to_see_album">Click to see my albums</string>
+    <string name="click_to_see_location">Click to see my location on map</string>
+    <string name="click_to_send_gcm_message">Click to send GCM message</string>
+    
+    <string name="error_dialog_title">Something Went Wrong</string>
+    <string name="error_dialog_button_text">OK</string>
+    <string name="error_dialog_default_text">No response from server.</string>
+    <string name="no_location_error">Could not obtain your current location</string>
+    <string name="error_authentication_retry">An error occurred that requires your attention. %1$s</string>
+    <string name="error_authentication_reopen">An error occurred, please re-login.</string>
+    <string name="error_permission">Please allow us to read your profile.</string>
+    <string name="error_server">The server is busy, please retry later.</string>
+    <string name="error_bad_request">An error occurred, please contact the developer with the following message: %1$s</string>
+    <string name="error_unknown">An unknown error occurred, please contact the developer with the following message: %1$s</string>
+    <string name="exception">Exception: %1$s</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    
+    <string name="result_dialog_title">Result</string>
+    <string name="result_dialog_button_text">Thanks!</string>
+    <string name="result_dialog_text_with_id">Posted Open Graph action, id: %1$s</string>
+    <string name="result_dialog_text_default">Post action complete.</string>
+    <string name="result_dialog_text_canceled">Post canceled.</string>
+    
+    <string name="user_albums">All My Albums</string>
+    <string name="all_photos">Photos</string>
+    <string name="photoes_in_album">Photos in %1$s</string>
+    
+    <string name="edit_message_box_hint">Please input the message</string>
+    <string name="my_location">My Location</string>
+    <string name="loading">Loading...</string>
+    <string name="status_list_header_text">Your Status Update Message:</string>
+    
+    
+</resources>

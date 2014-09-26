@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="top_title_bar_start_color">#FFFFFF</color>
+    <color name="top_title_bar_center_color">#FFFFFF</color>
+    <color name="top_title_bar_end_color">#EEEEEE</color>
+    <color name="black">#111</color>
+    <color name="dark_text">#333</color>
+    <color name="gray_text">#666666</color>
+    <color name="gray_dark_text">#262626</color>
+    <color name="separator_color">#CCCCCC</color>
+    <color name="white">#fff</color>
+    <color name="status_header_color">#EEEEEE</color>
+    
+</resources>

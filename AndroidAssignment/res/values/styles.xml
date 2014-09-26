@@ -1,0 +1,42 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Button.Gray">
+        <item name="android:background">@drawable/btn_gray</item>
+    </style>
+    
+    <style name="Button.GrayOutline">
+        <item name="android:background">@drawable/btn_gray_outline</item>
+    </style>
+    
+    <style name="Button.GrayOutline.Arrow">
+        <item name="android:drawableRight">@color/button_common_arrow_icon_selector</item>
+        <item name="android:drawablePadding">@dimen/padding</item>
+    </style>
+    
+    <style name="Theme.Assignment" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="padding_smallest">2dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="padding_double">16dp</dimen>
+    <dimen name="button_margin">10dp</dimen>
+    
+    <dimen name="profile_picture_height">100dp</dimen>
+    <dimen name="btn_gray_outline_padding">9dp</dimen>
+    <dimen name="top_title_bar_hegith">45dp</dimen>
+    
+    <dimen name="item_thumbnail_width">70dp</dimen>
+    <dimen name="item_thumbnail_height">100dp</dimen>
+    <dimen name="edit_message_box_height">100dp</dimen>
+    <dimen name="user_info_text_size">16sp</dimen>
+    <dimen name="status_header_size">18sp</dimen>
+    <dimen name="status_text_size">14sp</dimen>
+
+</resources>

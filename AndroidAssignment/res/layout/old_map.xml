@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_weight="1"
+        android:clickable="true" 
+        android:apiKey="" /> 
+        <!-- I didn't get a place to register and obtain Google MapView access key, 
+        it seems google has deprecated this service. Alternatively, I can register and 
+        obtain Google Maps Android API v2 key on Google API Console, but it can not used with MapView -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button 
+            android:id="@+id/get_current_location_button" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:drawableRight="@drawable/android_centeronme" />
+    </RelativeLayout>
+
+</FrameLayout>
