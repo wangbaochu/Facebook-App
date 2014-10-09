@@ -14,6 +14,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
 
@@ -52,6 +53,13 @@ public class MainActivity extends FragmentActivity {
         transaction.commit();
     }
 
+    @Override
+    public void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        //User touch the GCM notification to launch MainActivity
+        Toast.makeText(this, "Received GCM message", Toast.LENGTH_LONG).show();  
+    }
+    
     @Override
     public void onResume() {
         super.onResume();

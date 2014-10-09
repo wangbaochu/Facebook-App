@@ -40,7 +40,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class GcmActivity extends Activity {
 
-    public static final String EXTRA_MESSAGE = "message";
+    public static final String EXTRA_MESSAGE = "my_message";
     public static final String PROPERTY_REG_ID = "registration_id";
     private static final String PROPERTY_APP_VERSION = "appVersion";
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
@@ -185,6 +185,12 @@ public class GcmActivity extends Activity {
                 try {
                     if (mGCM == null) {
                         mGCM = GoogleCloudMessaging.getInstance(mContext);
+                        //Sleep 500 milliseconds to wait GoogleCloudMessaging initialized completely.
+                        try {
+                            Thread.sleep(500);
+                        } catch (InterruptedException e) {
+                            //Do nothing
+                        }
                     }
                     mRegisterId = mGCM.register(SENDER_ID);
                     msg = "Device registered, registration ID=" + mRegisterId;
@@ -220,10 +226,9 @@ public class GcmActivity extends Activity {
                     String status = "";
                     try {
                         String message = mMessageBox.getText().toString();
-                        if (message != null) {
+                        if (message != null && message.length() > 0) {
                             Bundle data = new Bundle();
-                            data.putString("my_message", message);
-                            data.putString("my_action", "com.google.android.gcm.demo.app.ECHO_NOW");
+                            data.putString(EXTRA_MESSAGE, message); 
                             String id = Integer.toString(msgId.incrementAndGet());
                             mGCM.send(SENDER_ID + "@gcm.googleapis.com", id, data);
                             status = "Sent message success.";
