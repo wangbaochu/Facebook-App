@@ -1,22 +1,21 @@
-=====================================================================
-======== Facebook-App: Android Facebook Platform Assignment =========
-=====================================================================
+======================================================
+= Facebook-App: Android Facebook Platform Assignment =
+======================================================
 
 Notice:
-1. This project is a assignment of Facebook Partner Engineer interview.
-   Every one are forbidden to use it for other purpose.
+1. This project is an assignment of Facebook Partner Engineer interview. It's forbidden to use for other purpose.
 
 2. There may be a bug with Facebook-sdk-3.18:
    Bug-Descripton: 
    Android Facebook SDK UserSettingsFragment crashes when exit before the profile image updates finished. 
 
-   Same issue can also found on:
+   Same issue can also be found on:
    http://stackoverflow.com/questions/18295737/android-facebook-sdk-usersettingsfragment-crashes-when-paused-before-it-finishes 
 
    Solution:
    “modified the processImageResponse(String id, ImageResponse response) to check if the fragment is added”
 
-   I don’t know whether this is really a bug or not, but it actually sometimes result my app crash. The solution can really get 
+   I don’t know whether this is a bug or not, but it actually sometimes result my app crash. The solution can really get 
    me out of this crash.
 
  3. The project uses Facebook-sdk-3.18 sdk Graph API to query user's profile data and albums photos. 
@@ -25,12 +24,12 @@ Notice:
  4. The project uses googl-play-services_lib to embed Google Maps and Google Cloud Messaging.
     To use googl-play-services_lib, developer also need to register this app on Google API Console to obtain an API accees key.
 
- 5. This project is only a interview assignment. Because of limited time, the app’s UI isn’t well designed, and the function is not well tested 
-    on different devices either. I make it works well on my Xiao-Mi 2S devise(OS v4.1.1), no crash. 
+ 5. This project is only an interview assignment. Because of limited time, the app’s UI isn’t well designed, and the function isn't well tested 
+    on different devices either. I only make it works well on my Xiao-Mi 2S devise(OS v4.1.1). 
 
  6. All the function are works well except for GCM (Google Cloud Messaging). I have reviewed my code and carefully take reference to google documation.
-    I don't found any issue in my code, but I have never got received a echo message I sent to GCM. Maybe it is related with China Great Firwall, which
-    blocks the GCM service. I have no way to verify the GCM function. 
+    I did't found any issue in my code, but I have never got received an echo message I sent to GCM. Maybe it is related with China Great Firwall, which
+    blocks the GCM service. I couldn't do any debugging for this issue. 
 
  7. There are three projects:
     (1) Facebook-sdk-3.18: This is the facebook sdk project. See how to get it: https://developers.facebook.com/docs/android/
@@ -39,12 +38,12 @@ Notice:
 
 8. Import these three project into your Eclipse workspace. These projects require at least Android API-Level 11.
 
-9. In order to build a real work APK, you should replace your Android debug.keystore with my own debug.keystore. Copy it to replace the one on /Users/username/.android/debug.keystore. Because I have registered this app on Facebook Dashboard and Google API Console both with my own debug.keystore. 
+9. Because I have registered this app on Facebook Dashboard and Google API Console both with my own debug.keystore, in order to build a real APK, you should replace your Android debug.keystore with my debug.keystore. (Copy it to replace yours under the folder /Users/$username/.android/debug.keystore) 
 
 10. Activity Hierarchy of AndroidAssignment project:
    (1) MainActivity contains three fragement:
        <1> LoginFragment: show the login button page.
-       <2> ProfileFragment: show current user's profile info. And it also a main pagen, that can navigate to Album page, Google map page and GCM page.
+       <2> ProfileFragment: show current user's profile info. And it also a main pagen that can navigate to Album page, Google map page and GCM page.
        <3> UserSettingsFragment: show the logout page. This is a standard component provide by Facebook SDK. You can click menu to open it.
    (2) AlbumActivity contains a grid view to show user's all albums.
    (3) PhotoActivity contains a grid view to show all the photos of a album.
