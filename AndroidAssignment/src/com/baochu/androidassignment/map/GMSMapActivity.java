@@ -1,6 +1,6 @@
 package com.baochu.androidassignment.map;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;

@@ -2,7 +2,7 @@ package com.baochu.androidassignment.album;
 
 import com.baochu.androidassignment.BitmapFetcher;
 import com.baochu.androidassignment.HttpFetcher;
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.baochu.androidassignment.Utils;
 import com.baochu.androidassignment.HttpFetcher.Params;
 

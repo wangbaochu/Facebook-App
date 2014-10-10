@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.baochu.androidassignment"
+    package="com.baochu.assignment"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -23,6 +23,17 @@
      is the application's package name. -->
     <permission android:name="com.baochu.androidassignment.permission.C2D_MESSAGE" android:protectionLevel="signature" />
     <uses-permission android:name="com.baochu.androidassignment.permission.C2D_MESSAGE" />
+    
+    <!-- IGetuiSDK Push Notification service permission -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="getui.permission.GetuiService" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- Creates a custom permission for IGetuiSDK -->
+    <permission android:name="getui.permission.GetuiService" android:protectionLevel="normal" />
 
     <application
         android:allowBackup="true"
@@ -77,7 +88,7 @@
         <!-- Facebook app Id, which is registered on Facebook App Dash-board -->
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
         <!-- Google Maps Android API-v2 service access key, which is registered on Google APIS Console -->
-        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBJeFIRcD7jUdHV_bHiI-u1RfJmb8w9uVs"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCFGVaJgqHSqeKQJYoe6jZPxfab1ReWZ4o"/>
         <!-- Google play service SDK, which include Google Maps Android API-v2 and Google Cloud Messaging Android API -->
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
         
@@ -100,6 +111,99 @@
                 <category android:name="com.baochu.androidassignment" />
             </intent-filter>
         </receiver>
+        
+        <activity
+            android:name="com.baochu.androidassignment.notification.NotificationEntryActivity"
+            android:launchMode="singleTop" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- IGetui Push Notification Activity -->
+        <activity
+            android:name="com.baochu.androidassignment.notification.IGetuiActivity"
+            android:launchMode="singleTop" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- IGetui Push Notification message receiver -->  
+        <receiver
+            android:name="com.baochu.androidassignment.notification.IGetuiBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.GLHDZ9JAob8lFF0AkCP53A" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Start IGetui SDK Configure -->
+        <meta-data android:name="PUSH_APPID" android:value="GLHDZ9JAob8lFF0AkCP53A" />
+        <meta-data android:name="PUSH_APPKEY" android:value="3kPktraAiY7ynec2gwqAN5" />
+        <meta-data android:name="PUSH_APPSECRET" android:value="bpauVo3yxS94BeDupdcbT" />
+        <meta-data android:name="PUSH_GROUPID" android:value="" />
+        
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:process=":pushservice"
+            android:exported="true"
+            android:label="NotificationCenter" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        
+        <service android:name="com.igexin.download.DownloadService" android:process=":pushservice" />
+        
+        <receiver android:name="com.igexin.download.DownloadReceiver"> 
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+        <provider android:process=":pushservice" 
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.baochu.assignment" >
+        </provider>
+        
+        <activity android:name="com.igexin.getuiext.activity.GetuiExtActivity"  
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false" >
+        </activity>
+        
+        <receiver android:name="com.igexin.getuiext.service.PayloadReceiver" android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />            
+                <action android:name="com.igexin.sdk.action.GLHDZ9JAob8lFF0AkCP53A" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.igexin.getuiext.service.GetuiExtService" android:process=":pushservice" />
+        <!-- End IGetui SDK Configure -->
         
     </application>
 

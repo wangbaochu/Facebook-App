@@ -3,7 +3,7 @@ package com.baochu.androidassignment.album;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.baochu.androidassignment.Utils;
 
 import android.app.AlertDialog;

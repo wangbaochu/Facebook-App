@@ -16,7 +16,7 @@
 
 package com.baochu.androidassignment.login;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.baochu.androidassignment.Utils;
 import com.facebook.widget.LoginButton;
 

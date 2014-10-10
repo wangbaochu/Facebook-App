@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.baochu.androidassignment;
+package com.baochu.assignment;
 
 public final class Manifest {
     public static final class permission {
@@ -14,5 +14,8 @@ public final class Manifest {
      is the application's package name. 
          */
         public static final String C2D_MESSAGE="com.baochu.androidassignment.permission.C2D_MESSAGE";
+        /**  Creates a custom permission for IGetuiSDK 
+         */
+        public static final String GetuiService="getui.permission.GetuiService";
     }
 }

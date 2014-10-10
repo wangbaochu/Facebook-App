@@ -5,7 +5,7 @@ import com.baochu.androidassignment.BitmapFetcher;
 import com.baochu.androidassignment.HttpFetcher;
 import com.baochu.androidassignment.HttpFetcher.Params;
 import com.baochu.androidassignment.LRUCache;
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.baochu.androidassignment.Utils;
 
 import android.content.Context;

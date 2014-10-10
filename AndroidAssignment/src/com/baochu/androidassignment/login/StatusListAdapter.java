@@ -3,7 +3,7 @@ package com.baochu.androidassignment.login;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;

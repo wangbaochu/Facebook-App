@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvappkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvappsecret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/tvmastersecret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvappid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="" />
+    
+    <EditText 
+        android:id="@+id/msg_edit_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message_box_hint" 
+        android:lines="@integer/edit_box_lines" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="@dimen/padding">
+        
+        <Button
+            android:id="@+id/msg_send_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/send_message" />
+        <Button
+            android:id="@+id/msg_clear_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/clear_message" />
+    </LinearLayout>
+    
+</LinearLayout>
+

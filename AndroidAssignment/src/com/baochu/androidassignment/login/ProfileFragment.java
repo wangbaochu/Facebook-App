@@ -27,11 +27,12 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.*;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.baochu.androidassignment.Utils;
 import com.baochu.androidassignment.album.AlbumActivity;
 import com.baochu.androidassignment.map.GMSMapActivity;
 import com.baochu.androidassignment.notification.GcmActivity;
+import com.baochu.androidassignment.notification.NotificationEntryActivity;
 import com.facebook.*;
 import com.facebook.model.*;
 import com.facebook.widget.ProfilePictureView;
@@ -92,7 +93,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Context context = ProfileFragment.this.getActivity();
-                Intent intent = new Intent(context, GcmActivity.class);
+                Intent intent = new Intent(context, NotificationEntryActivity.class);
                 context.startActivity(intent);
             }
         });

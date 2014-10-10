@@ -1,6 +1,6 @@
 package com.baochu.androidassignment.album;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.baochu.androidassignment.RequestCodes;
 import com.facebook.Session;
 

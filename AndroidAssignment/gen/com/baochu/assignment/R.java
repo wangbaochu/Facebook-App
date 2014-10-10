@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.baochu.androidassignment;
+package com.baochu.assignment;
 
 public final class R {
     public static final class anim {
@@ -656,8 +656,8 @@ containing a value of this type.
         public static final int top_title_bar_background=0x7f020055;
     }
     public static final class id {
-        public static final int action_settings=0x7f080059;
-        public static final int album_button=0x7f080049;
+        public static final int action_settings=0x7f080062;
+        public static final int album_button=0x7f080052;
         public static final int album_id_tag=0x7f080016;
         public static final int album_name_tag=0x7f080017;
         public static final int albums_gridview=0x7f08001a;
@@ -666,7 +666,7 @@ containing a value of this type.
         public static final int buy_now=0x7f08000f;
         public static final int buy_with_google=0x7f08000e;
         public static final int classic=0x7f080011;
-        public static final int clear_button=0x7f080040;
+        public static final int clear_button=0x7f080042;
         public static final int com_facebook_body_frame=0x7f08002d;
         public static final int com_facebook_button_xout=0x7f08002f;
         public static final int com_facebook_login_activity_progress_bar=0x7f08001d;
@@ -692,57 +692,66 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f080034;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f080032;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f080033;
-        public static final int display=0x7f080041;
-        public static final int edit_box=0x7f08003e;
-        public static final int gcm_message_button=0x7f08004b;
-        public static final int get_current_location_button=0x7f080043;
+        public static final int display=0x7f080043;
+        public static final int edit_box=0x7f080040;
+        public static final int gcm_message_button=0x7f080054;
+        public static final int gcm_notification_button=0x7f08003e;
+        public static final int get_current_location_button=0x7f08004c;
         public static final int grayscale=0x7f080012;
         public static final int holo_dark=0x7f080005;
         public static final int holo_light=0x7f080006;
         public static final int hybrid=0x7f080004;
+        public static final int igetui_notification_button=0x7f08003f;
         public static final int item_image=0x7f080036;
         public static final int item_image_text=0x7f080037;
         public static final int large=0x7f080015;
-        public static final int loading_progress=0x7f08004e;
-        public static final int loading_progress_bar=0x7f08004d;
-        public static final int location_button=0x7f08004a;
+        public static final int loading_progress=0x7f080057;
+        public static final int loading_progress_bar=0x7f080056;
+        public static final int location_button=0x7f080053;
         public static final int loginFragment=0x7f08003b;
         public static final int login_button=0x7f08003a;
         public static final int login_greeting=0x7f080038;
         public static final int login_profilePicture=0x7f080039;
         public static final int map=0x7f080035;
-        public static final int mapview=0x7f080042;
+        public static final int mapview=0x7f08004b;
         public static final int match_parent=0x7f08000c;
-        public static final int menu_addmarker=0x7f080056;
-        public static final int menu_getcurrentlocation=0x7f080057;
-        public static final int menu_gotolocation=0x7f080055;
-        public static final int menu_lineconnecttwopoints=0x7f080058;
-        public static final int menu_sethybrid=0x7f080051;
-        public static final int menu_showtraffic=0x7f080052;
-        public static final int menu_zoomin=0x7f080053;
-        public static final int menu_zoomout=0x7f080054;
+        public static final int menu_addmarker=0x7f08005f;
+        public static final int menu_getcurrentlocation=0x7f080060;
+        public static final int menu_gotolocation=0x7f08005e;
+        public static final int menu_lineconnecttwopoints=0x7f080061;
+        public static final int menu_sethybrid=0x7f08005a;
+        public static final int menu_showtraffic=0x7f08005b;
+        public static final int menu_zoomin=0x7f08005c;
+        public static final int menu_zoomout=0x7f08005d;
         public static final int monochrome=0x7f080013;
+        public static final int msg_clear_button=0x7f08004a;
+        public static final int msg_edit_box=0x7f080048;
+        public static final int msg_send_button=0x7f080049;
         public static final int none=0x7f080000;
         public static final int normal=0x7f080001;
-        public static final int photo_image=0x7f080044;
-        public static final int photos_gridview=0x7f080046;
+        public static final int photo_image=0x7f08004d;
+        public static final int photos_gridview=0x7f08004f;
         public static final int picker_subtitle=0x7f08002a;
         public static final int production=0x7f080007;
         public static final int profileFragment=0x7f08003c;
-        public static final int profile_Picture=0x7f080047;
+        public static final int profile_Picture=0x7f080050;
         public static final int sandbox=0x7f080008;
         public static final int satellite=0x7f080002;
         public static final int selectionDetails=0x7f08000b;
-        public static final int send_button=0x7f08003f;
+        public static final int send_button=0x7f080041;
         public static final int small=0x7f080014;
-        public static final int status_list=0x7f08004c;
-        public static final int status_message=0x7f08004f;
-        public static final int status_time=0x7f080050;
+        public static final int status_list=0x7f080055;
+        public static final int status_message=0x7f080058;
+        public static final int status_time=0x7f080059;
         public static final int strict_sandbox=0x7f080009;
         public static final int terrain=0x7f080003;
-        public static final int title_bar_text=0x7f080045;
+        public static final int title_bar_text=0x7f08004e;
+        public static final int tvappid=0x7f080047;
+        public static final int tvappkey=0x7f080044;
+        public static final int tvappsecret=0x7f080045;
+        public static final int tvmastersecret=0x7f080046;
         public static final int userSettingsFragment=0x7f08003d;
-        public static final int user_info=0x7f080048;
+        public static final int user_info=0x7f080051;
         public static final int view_it_top_title=0x7f080019;
         public static final int view_it_top_tool_bar=0x7f080018;
         public static final int wrap_content=0x7f08000d;
@@ -776,14 +785,16 @@ containing a value of this type.
         public static final int image_item_view=0x7f030011;
         public static final int login_fragment=0x7f030012;
         public static final int main=0x7f030013;
-        public static final int notification=0x7f030014;
-        public static final int old_map=0x7f030015;
-        public static final int photo_big_view=0x7f030016;
-        public static final int photos_grid_view=0x7f030017;
-        public static final int profile_fragment=0x7f030018;
-        public static final int progress_bar=0x7f030019;
-        public static final int status_item_view=0x7f03001a;
-        public static final int status_list_header=0x7f03001b;
+        public static final int notification_entry=0x7f030014;
+        public static final int notification_gcm=0x7f030015;
+        public static final int notification_igetui=0x7f030016;
+        public static final int old_map=0x7f030017;
+        public static final int photo_big_view=0x7f030018;
+        public static final int photos_grid_view=0x7f030019;
+        public static final int profile_fragment=0x7f03001a;
+        public static final int progress_bar=0x7f03001b;
+        public static final int status_item_view=0x7f03001c;
+        public static final int status_list_header=0x7f03001d;
     }
     public static final class menu {
         public static final int gms_map_menu=0x7f0b0000;
@@ -796,10 +807,11 @@ containing a value of this type.
         public static final int all_photos=0x7f070057;
         public static final int app_name=0x7f070034;
         public static final int cancel=0x7f070050;
+        public static final int choose_notification=0x7f07005d;
         public static final int clear_message=0x7f070040;
         public static final int click_to_see_album=0x7f070041;
         public static final int click_to_see_location=0x7f070042;
-        public static final int click_to_send_gcm_message=0x7f070043;
+        public static final int click_to_send_notification_message=0x7f070043;
         public static final int com_facebook_choose_friends=0x7f070029;
         public static final int com_facebook_dialogloginactivity_ok_button=0x7f07001a;
         public static final int com_facebook_internet_permission_error_message=0x7f07002d;
@@ -927,8 +939,10 @@ containing a value of this type.
         public static final int error_unknown=0x7f07004d;
         public static final int exception=0x7f07004e;
         public static final int facebook_app_id=0x7f070037;
+        public static final int gcm_notification=0x7f07005e;
         public static final int hello_user=0x7f07003c;
         public static final int hello_world=0x7f070036;
+        public static final int igetui_notification=0x7f07005f;
         public static final int loading=0x7f07005b;
         public static final int manual_location_settings_message=0x7f070038;
         public static final int manual_location_settings_title=0x7f070039;
@@ -993,11 +1007,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize com.baochu.androidassignment:adSize}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSize com.baochu.assignment:adSize}</code></td><td>
     The size of the ad.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes com.baochu.androidassignment:adSizes}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSizes com.baochu.assignment:adSizes}</code></td><td>
     A comma-separated list of the supported ad sizes.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId com.baochu.androidassignment:adUnitId}</code></td><td> The ad unit ID.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId com.baochu.assignment:adUnitId}</code></td><td> The ad unit ID.</td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -1023,7 +1037,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:adSize
+          @attr name com.baochu.assignment:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
@@ -1043,7 +1057,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:adSizes
+          @attr name com.baochu.assignment:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
@@ -1059,7 +1073,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:adUnitId
+          @attr name com.baochu.assignment:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a MapAttrs.
@@ -1068,20 +1082,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.baochu.androidassignment:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.baochu.androidassignment:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.baochu.androidassignment:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.baochu.androidassignment:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.baochu.androidassignment:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.baochu.androidassignment:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.baochu.androidassignment:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.baochu.androidassignment:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.baochu.androidassignment:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.baochu.androidassignment:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.baochu.androidassignment:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.baochu.androidassignment:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.baochu.androidassignment:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.baochu.androidassignment:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.baochu.assignment:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.baochu.assignment:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.baochu.assignment:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.baochu.assignment:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.baochu.assignment:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.baochu.assignment:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.baochu.assignment:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.baochu.assignment:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.baochu.assignment:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.baochu.assignment:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.baochu.assignment:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.baochu.assignment:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.baochu.assignment:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.baochu.assignment:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
@@ -1105,7 +1119,7 @@ containing a value of this type.
             0x7f01000f, 0x7f010010
         };
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1115,11 +1129,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:cameraBearing
+          @attr name com.baochu.assignment:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1129,11 +1143,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:cameraTargetLat
+          @attr name com.baochu.assignment:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1143,11 +1157,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:cameraTargetLng
+          @attr name com.baochu.assignment:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1157,11 +1171,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:cameraTilt
+          @attr name com.baochu.assignment:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1171,11 +1185,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:cameraZoom
+          @attr name com.baochu.assignment:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1191,11 +1205,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.baochu.androidassignment:mapType
+          @attr name com.baochu.assignment:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1205,11 +1219,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:uiCompass
+          @attr name com.baochu.assignment:uiCompass
         */
         public static final int MapAttrs_uiCompass = 6;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1219,11 +1233,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:uiRotateGestures
+          @attr name com.baochu.assignment:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 7;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1233,11 +1247,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:uiScrollGestures
+          @attr name com.baochu.assignment:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1247,11 +1261,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:uiTiltGestures
+          @attr name com.baochu.assignment:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1261,11 +1275,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:uiZoomControls
+          @attr name com.baochu.assignment:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 10;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1275,11 +1289,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:uiZoomGestures
+          @attr name com.baochu.assignment:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 11;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1289,11 +1303,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:useViewLifecycle
+          @attr name com.baochu.assignment:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1303,7 +1317,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:zOrderOnTop
+          @attr name com.baochu.assignment:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 13;
         /**  Attributes for the WalletFragment &lt;fragment&gt; tag 
@@ -1312,10 +1326,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment com.baochu.androidassignment:environment}</code></td><td> Google Wallet environment to use </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.baochu.androidassignment:fragmentMode}</code></td><td> Fragment mode </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.baochu.androidassignment:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_theme com.baochu.androidassignment:theme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment com.baochu.assignment:environment}</code></td><td> Google Wallet environment to use </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.baochu.assignment:fragmentMode}</code></td><td> Fragment mode </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.baochu.assignment:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_theme com.baochu.assignment:theme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
            </table>
            @see #WalletFragmentOptions_environment
            @see #WalletFragmentOptions_fragmentMode
@@ -1342,7 +1356,7 @@ containing a value of this type.
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:environment
+          @attr name com.baochu.assignment:environment
         */
         public static final int WalletFragmentOptions_environment = 1;
         /**
@@ -1361,7 +1375,7 @@ containing a value of this type.
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:fragmentMode
+          @attr name com.baochu.assignment:fragmentMode
         */
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
@@ -1373,7 +1387,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:fragmentStyle
+          @attr name com.baochu.assignment:fragmentStyle
         */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
         /**
@@ -1392,7 +1406,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:theme
+          @attr name com.baochu.assignment:theme
         */
         public static final int WalletFragmentOptions_theme = 0;
         /**  Attributes that may be specified in a style resource to customize the look and feel of
@@ -1402,17 +1416,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.baochu.androidassignment:buyButtonAppearance}</code></td><td> Appearance of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.baochu.androidassignment:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.baochu.androidassignment:buyButtonText}</code></td><td> Text on the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.baochu.androidassignment:buyButtonWidth}</code></td><td> Width of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.baochu.androidassignment:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.baochu.androidassignment:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.baochu.androidassignment:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.baochu.androidassignment:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.baochu.androidassignment:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.baochu.androidassignment:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.baochu.androidassignment:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.baochu.assignment:buyButtonAppearance}</code></td><td> Appearance of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.baochu.assignment:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.baochu.assignment:buyButtonText}</code></td><td> Text on the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.baochu.assignment:buyButtonWidth}</code></td><td> Width of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.baochu.assignment:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.baochu.assignment:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.baochu.assignment:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.baochu.assignment:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.baochu.assignment:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.baochu.assignment:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.baochu.assignment:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
            </table>
            @see #WalletFragmentStyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
@@ -1448,7 +1462,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:buyButtonAppearance
+          @attr name com.baochu.assignment:buyButtonAppearance
         */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
@@ -1477,7 +1491,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:buyButtonHeight
+          @attr name com.baochu.assignment:buyButtonHeight
         */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
@@ -1497,7 +1511,7 @@ containing a value of this type.
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:buyButtonText
+          @attr name com.baochu.assignment:buyButtonText
         */
         public static final int WalletFragmentStyle_buyButtonText = 2;
         /**
@@ -1526,7 +1540,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:buyButtonWidth
+          @attr name com.baochu.assignment:buyButtonWidth
         */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
         /**
@@ -1540,7 +1554,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:maskedWalletDetailsBackground
+          @attr name com.baochu.assignment:maskedWalletDetailsBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
@@ -1554,7 +1568,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:maskedWalletDetailsButtonBackground
+          @attr name com.baochu.assignment:maskedWalletDetailsButtonBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
@@ -1566,7 +1580,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:maskedWalletDetailsButtonTextAppearance
+          @attr name com.baochu.assignment:maskedWalletDetailsButtonTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
@@ -1578,7 +1592,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:maskedWalletDetailsHeaderTextAppearance
+          @attr name com.baochu.assignment:maskedWalletDetailsHeaderTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
@@ -1597,7 +1611,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:maskedWalletDetailsLogoImageType
+          @attr name com.baochu.assignment:maskedWalletDetailsLogoImageType
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
@@ -1614,7 +1628,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:maskedWalletDetailsLogoTextColor
+          @attr name com.baochu.assignment:maskedWalletDetailsLogoTextColor
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
@@ -1626,7 +1640,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.baochu.androidassignment:maskedWalletDetailsTextAppearance
+          @attr name com.baochu.assignment:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
         /** Attributes that can be used with a com_facebook_friend_picker_fragment.
@@ -1635,7 +1649,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_friend_picker_fragment_multi_select com.baochu.androidassignment:multi_select}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_friend_picker_fragment_multi_select com.baochu.assignment:multi_select}</code></td><td></td></tr>
            </table>
            @see #com_facebook_friend_picker_fragment_multi_select
          */
@@ -1643,7 +1657,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#multi_select}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#multi_select}
           attribute's value can be found in the {@link #com_facebook_friend_picker_fragment} array.
 
 
@@ -1653,7 +1667,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:multi_select
+          @attr name com.baochu.assignment:multi_select
         */
         public static final int com_facebook_friend_picker_fragment_multi_select = 0;
         /** Attributes that can be used with a com_facebook_login_view.
@@ -1662,10 +1676,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_login_view_confirm_logout com.baochu.androidassignment:confirm_logout}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_fetch_user_info com.baochu.androidassignment:fetch_user_info}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_login_text com.baochu.androidassignment:login_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_logout_text com.baochu.androidassignment:logout_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_confirm_logout com.baochu.assignment:confirm_logout}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_fetch_user_info com.baochu.assignment:fetch_user_info}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_login_text com.baochu.assignment:login_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_logout_text com.baochu.assignment:logout_text}</code></td><td></td></tr>
            </table>
            @see #com_facebook_login_view_confirm_logout
            @see #com_facebook_login_view_fetch_user_info
@@ -1676,7 +1690,7 @@ containing a value of this type.
             0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f
         };
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#confirm_logout}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#confirm_logout}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -1686,11 +1700,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:confirm_logout
+          @attr name com.baochu.assignment:confirm_logout
         */
         public static final int com_facebook_login_view_confirm_logout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#fetch_user_info}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#fetch_user_info}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -1700,11 +1714,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:fetch_user_info
+          @attr name com.baochu.assignment:fetch_user_info
         */
         public static final int com_facebook_login_view_fetch_user_info = 1;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#login_text}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#login_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -1714,11 +1728,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:login_text
+          @attr name com.baochu.assignment:login_text
         */
         public static final int com_facebook_login_view_login_text = 2;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#logout_text}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#logout_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -1728,7 +1742,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:logout_text
+          @attr name com.baochu.assignment:logout_text
         */
         public static final int com_facebook_login_view_logout_text = 3;
         /** Attributes that can be used with a com_facebook_picker_fragment.
@@ -1737,13 +1751,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_done_button_background com.baochu.androidassignment:done_button_background}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_done_button_text com.baochu.androidassignment:done_button_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_extra_fields com.baochu.androidassignment:extra_fields}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_show_pictures com.baochu.androidassignment:show_pictures}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_show_title_bar com.baochu.androidassignment:show_title_bar}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_title_bar_background com.baochu.androidassignment:title_bar_background}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_title_text com.baochu.androidassignment:title_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_picker_fragment_done_button_background com.baochu.assignment:done_button_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_picker_fragment_done_button_text com.baochu.assignment:done_button_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_picker_fragment_extra_fields com.baochu.assignment:extra_fields}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_picker_fragment_show_pictures com.baochu.assignment:show_pictures}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_picker_fragment_show_title_bar com.baochu.assignment:show_title_bar}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_picker_fragment_title_bar_background com.baochu.assignment:title_bar_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_picker_fragment_title_text com.baochu.assignment:title_text}</code></td><td></td></tr>
            </table>
            @see #com_facebook_picker_fragment_done_button_background
            @see #com_facebook_picker_fragment_done_button_text
@@ -1758,17 +1772,17 @@ containing a value of this type.
             0x7f010024, 0x7f010025, 0x7f010026
         };
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#done_button_background}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#done_button_background}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.baochu.androidassignment:done_button_background
+          @attr name com.baochu.assignment:done_button_background
         */
         public static final int com_facebook_picker_fragment_done_button_background = 6;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#done_button_text}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#done_button_text}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
@@ -1778,11 +1792,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:done_button_text
+          @attr name com.baochu.assignment:done_button_text
         */
         public static final int com_facebook_picker_fragment_done_button_text = 4;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#extra_fields}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#extra_fields}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
@@ -1792,11 +1806,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:extra_fields
+          @attr name com.baochu.assignment:extra_fields
         */
         public static final int com_facebook_picker_fragment_extra_fields = 1;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#show_pictures}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#show_pictures}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
@@ -1806,11 +1820,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:show_pictures
+          @attr name com.baochu.assignment:show_pictures
         */
         public static final int com_facebook_picker_fragment_show_pictures = 0;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#show_title_bar}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#show_title_bar}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
@@ -1820,21 +1834,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:show_title_bar
+          @attr name com.baochu.assignment:show_title_bar
         */
         public static final int com_facebook_picker_fragment_show_title_bar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#title_bar_background}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#title_bar_background}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.baochu.androidassignment:title_bar_background
+          @attr name com.baochu.assignment:title_bar_background
         */
         public static final int com_facebook_picker_fragment_title_bar_background = 5;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#title_text}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#title_text}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
@@ -1844,7 +1858,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:title_text
+          @attr name com.baochu.assignment:title_text
         */
         public static final int com_facebook_picker_fragment_title_text = 3;
         /** Attributes that can be used with a com_facebook_place_picker_fragment.
@@ -1853,10 +1867,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_place_picker_fragment_radius_in_meters com.baochu.androidassignment:radius_in_meters}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_place_picker_fragment_results_limit com.baochu.androidassignment:results_limit}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_place_picker_fragment_search_text com.baochu.androidassignment:search_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_place_picker_fragment_show_search_box com.baochu.androidassignment:show_search_box}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_place_picker_fragment_radius_in_meters com.baochu.assignment:radius_in_meters}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_place_picker_fragment_results_limit com.baochu.assignment:results_limit}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_place_picker_fragment_search_text com.baochu.assignment:search_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_place_picker_fragment_show_search_box com.baochu.assignment:show_search_box}</code></td><td></td></tr>
            </table>
            @see #com_facebook_place_picker_fragment_radius_in_meters
            @see #com_facebook_place_picker_fragment_results_limit
@@ -1867,7 +1881,7 @@ containing a value of this type.
             0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b
         };
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#radius_in_meters}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#radius_in_meters}
           attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
 
 
@@ -1877,11 +1891,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:radius_in_meters
+          @attr name com.baochu.assignment:radius_in_meters
         */
         public static final int com_facebook_place_picker_fragment_radius_in_meters = 0;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#results_limit}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#results_limit}
           attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
 
 
@@ -1891,11 +1905,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:results_limit
+          @attr name com.baochu.assignment:results_limit
         */
         public static final int com_facebook_place_picker_fragment_results_limit = 1;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#search_text}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#search_text}
           attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
 
 
@@ -1905,11 +1919,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:search_text
+          @attr name com.baochu.assignment:search_text
         */
         public static final int com_facebook_place_picker_fragment_search_text = 2;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#show_search_box}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#show_search_box}
           attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
 
 
@@ -1919,7 +1933,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:show_search_box
+          @attr name com.baochu.assignment:show_search_box
         */
         public static final int com_facebook_place_picker_fragment_show_search_box = 3;
         /** Attributes that can be used with a com_facebook_profile_picture_view.
@@ -1928,8 +1942,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_is_cropped com.baochu.androidassignment:is_cropped}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_preset_size com.baochu.androidassignment:preset_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_is_cropped com.baochu.assignment:is_cropped}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_preset_size com.baochu.assignment:preset_size}</code></td><td></td></tr>
            </table>
            @see #com_facebook_profile_picture_view_is_cropped
            @see #com_facebook_profile_picture_view_preset_size
@@ -1938,7 +1952,7 @@ containing a value of this type.
             0x7f010030, 0x7f010031
         };
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#is_cropped}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#is_cropped}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -1948,11 +1962,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.baochu.androidassignment:is_cropped
+          @attr name com.baochu.assignment:is_cropped
         */
         public static final int com_facebook_profile_picture_view_is_cropped = 1;
         /**
-          <p>This symbol is the offset where the {@link com.baochu.androidassignment.R.attr#preset_size}
+          <p>This symbol is the offset where the {@link com.baochu.assignment.R.attr#preset_size}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -1966,7 +1980,7 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>-3</td><td></td></tr>
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
-          @attr name com.baochu.androidassignment:preset_size
+          @attr name com.baochu.assignment:preset_size
         */
         public static final int com_facebook_profile_picture_view_preset_size = 0;
     };

@@ -1,6 +1,6 @@
 package com.baochu.androidassignment.login;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 
 import android.content.Context;
 import android.util.AttributeSet;

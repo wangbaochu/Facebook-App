@@ -1,6 +1,6 @@
 package com.baochu.androidassignment.login;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
@@ -57,7 +57,7 @@ public class MainActivity extends FragmentActivity {
     public void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         //User touch the GCM notification to launch MainActivity
-        Toast.makeText(this, "Received GCM message", Toast.LENGTH_LONG).show();  
+        //Toast.makeText(this, "Received GCM message", Toast.LENGTH_LONG).show();  
     }
     
     @Override

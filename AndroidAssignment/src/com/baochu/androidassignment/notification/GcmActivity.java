@@ -15,7 +15,8 @@
  */
 package com.baochu.androidassignment.notification;
 
-import com.baochu.androidassignment.R;
+import com.baochu.androidassignment.Utils;
+import com.baochu.assignment.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -36,7 +37,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.IOException;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class GcmActivity extends Activity {
 
@@ -59,14 +59,13 @@ public class GcmActivity extends Activity {
     private Button mClearButton;
     
     private GoogleCloudMessaging mGCM;
-    private AtomicInteger msgId = new AtomicInteger();
     private Context mContext;
     private String mRegisterId;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notification);
+        setContentView(R.layout.notification_gcm);
         mContext = getApplicationContext();
         
         mDisplay = (TextView) findViewById(R.id.display);
@@ -92,6 +91,8 @@ public class GcmActivity extends Activity {
             mRegisterId = getRegistrationId(mContext);
             if (mRegisterId.isEmpty()) {
                 registerInBackground();
+            } else {
+                mDisplay.setText("Device registered successfully." + "\n" + "ID=" + mRegisterId);
             }
         } else {
             Log.e(TAG, "No valid Google Play Services APK found.");
@@ -193,7 +194,7 @@ public class GcmActivity extends Activity {
                         }
                     }
                     mRegisterId = mGCM.register(SENDER_ID);
-                    msg = "Device registered, registration ID=" + mRegisterId;
+                    msg = "Device registered successfully." + "\n" + "ID=" + mRegisterId;
 
                     // You should send the registration ID to your server over HTTP, so it
                     // can use GCM/HTTP or CCS to send messages to your app.
@@ -202,7 +203,7 @@ public class GcmActivity extends Activity {
                     // Persist the regID - no need to register again.
                     storeRegistrationId(mContext, mRegisterId);
                 } catch (IOException ex) {
-                    msg = "Error :" + ex.getMessage();
+                    msg = "Device registered Failed: " + ex.getMessage();
                     // If there is an error, don't just keep trying to register.
                     // Require the user to click a button again, or perform
                     // exponential back-off.
@@ -229,7 +230,7 @@ public class GcmActivity extends Activity {
                         if (message != null && message.length() > 0) {
                             Bundle data = new Bundle();
                             data.putString(EXTRA_MESSAGE, message); 
-                            String id = Integer.toString(msgId.incrementAndGet());
+                            String id = Integer.toString(Utils.getMessageId());
                             mGCM.send(SENDER_ID + "@gcm.googleapis.com", id, data);
                             status = "Sent message success.";
                         } else {
@@ -243,7 +244,7 @@ public class GcmActivity extends Activity {
 
                 @Override
                 protected void onPostExecute(String statusMsg) {
-                    mDisplay.append(statusMsg + "\n");
+                    mDisplay.append("\n\n" + statusMsg);
                 }
             }.execute(null, null, null);
         } else if (view == findViewById(R.id.clear_button)) {

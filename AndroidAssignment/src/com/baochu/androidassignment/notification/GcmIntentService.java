@@ -15,7 +15,7 @@
  */
 package com.baochu.androidassignment.notification;
 
-import com.baochu.androidassignment.R;
+import com.baochu.assignment.R;
 import com.baochu.androidassignment.login.MainActivity;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 

@@ -5,8 +5,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import com.baochu.androidassignment.UiOOMHandler.UiRunnable;
+import com.baochu.assignment.R;
 import com.facebook.FacebookRequestError;
 import com.facebook.Session;
 import com.facebook.SessionDefaultAudience;
@@ -39,6 +41,11 @@ public class Utils {
     private static final Uri M_FACEBOOK_URL = Uri.parse("http://m.facebook.com");
     
     public static final int BUFFER_SIZE_DEFAULT_FOR_FILE = 8192;
+    
+    public static AtomicInteger sMessageId = new AtomicInteger();
+    public static int getMessageId() {
+        return sMessageId.incrementAndGet();
+    }
 
     public static List<String> getAllNecessaryReadPermission() {
         List<String> permissions = new ArrayList<String>();

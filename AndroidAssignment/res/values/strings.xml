@@ -19,7 +19,7 @@
     <string name="clear_message">Clear</string>
     <string name="click_to_see_album">Click to see my albums</string>
     <string name="click_to_see_location">Click to see my location on map</string>
-    <string name="click_to_send_gcm_message">Click to send GCM message</string>
+    <string name="click_to_send_notification_message">Click to send notification message</string>
     
     <string name="error_dialog_title">Something Went Wrong</string>
     <string name="error_dialog_button_text">OK</string>
@@ -49,6 +49,11 @@
     <string name="my_location">My Location</string>
     <string name="loading">Loading...</string>
     <string name="status_list_header_text">Your Status Update Message:</string>
+    
+    <string name="choose_notification">Please choose notification method:</string>
+    <string name="gcm_notification">GCM Push Notification</string>
+    <string name="igetui_notification">IGetui Push Notification</string>
+    
     
     
 </resources>
