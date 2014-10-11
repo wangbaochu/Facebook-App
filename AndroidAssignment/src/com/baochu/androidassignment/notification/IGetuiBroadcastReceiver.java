@@ -26,7 +26,7 @@ public class IGetuiBroadcastReceiver extends BroadcastReceiver {
         case PushConsts.GET_CLIENTID:
             String cid = bundle.getString("clientid");
             if (cid != null && cid.length() > 0) {
-                IGetuiActivity.sClientId = cid;
+                IGetuiActivity.setClientId(cid);
                 Log.d("IGetuiBroadcastReceiver", "########### clientid =" + cid + "###########");
             }
             break;

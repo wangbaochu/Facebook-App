@@ -53,6 +53,7 @@
     <string name="choose_notification">Please choose notification method:</string>
     <string name="gcm_notification">GCM Push Notification</string>
     <string name="igetui_notification">IGetui Push Notification</string>
+    <string name="no_clientid">clientid=(none)</string>
     
     
     

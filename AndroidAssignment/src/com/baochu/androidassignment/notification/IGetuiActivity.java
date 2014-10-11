@@ -32,12 +32,13 @@ public class IGetuiActivity extends Activity implements OnClickListener {
     private static String appid = null;
     private static String appkey = null;
     private static String appsecret = null;
-    public static String sClientId = "1c7e126264160d47803792df29fbf524";
+    public static String sClientId = null;
 
     private TextView mAppkeyView = null;
     private TextView mAppSecretView = null;
     private TextView mAppIdView = null;
     private TextView mMasterSecretView = null;
+    public static TextView sAppClientId = null;
     private EditText mMsgInputView = null;
     private Button mMsgSendBtn = null;
     private Button mMsgClearBtn = null;
@@ -54,6 +55,7 @@ public class IGetuiActivity extends Activity implements OnClickListener {
         mAppSecretView = (TextView) findViewById(R.id.tvappsecret);
         mMasterSecretView = (TextView) findViewById(R.id.tvmastersecret);
         mAppIdView = (TextView) findViewById(R.id.tvappid);
+        sAppClientId = (TextView) findViewById(R.id.tvclientId);
         mMsgInputView = (EditText) findViewById(R.id.msg_edit_box);
         mMsgSendBtn = (Button) findViewById(R.id.msg_send_button);
         mMsgSendBtn.setOnClickListener(this);
@@ -103,6 +105,11 @@ public class IGetuiActivity extends Activity implements OnClickListener {
                 Toast.makeText(this, "Please input message !", Toast.LENGTH_LONG).show();
                 return;
             }
+            
+            if (sClientId == null || sClientId.length() == 0) {
+                Toast.makeText(this, "clientId = null, please wait registration complete !", Toast.LENGTH_LONG).show();
+                return;
+            }
 
             if (isNetworkConnected()) {
                 Map<String, Object> param = new HashMap<String, Object>();
@@ -123,6 +130,14 @@ public class IGetuiActivity extends Activity implements OnClickListener {
         }
     }
 
+    /** Update the client Id */
+    public static void setClientId(String clientId) {
+        if (clientId != null && clientId.length() > 0) {
+            sClientId = clientId;
+            sAppClientId.setText("clientid=" + clientId);
+        }
+    }
+    
     /** Post message */
     private void postMessage(final Map<String, Object> param) {
         new Thread(new Runnable() {

@@ -31,6 +31,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:text="" />
+    <TextView
+        android:id="@+id/tvclientId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/no_clientid" />
     
     <EditText 
         android:id="@+id/msg_edit_box"
