@@ -17,10 +17,13 @@ package com.baochu.androidassignment.notification;
 
 import com.baochu.androidassignment.Utils;
 import com.baochu.assignment.R;
+import com.google.android.gcm.server.InvalidRequestException;
+import com.google.android.gcm.server.Message;
+import com.google.android.gcm.server.Result;
+import com.google.android.gcm.server.Sender;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
-
 
 import android.app.Activity;
 import android.content.Context;
@@ -45,6 +48,9 @@ public class GcmActivity extends Activity {
     private static final String PROPERTY_APP_VERSION = "appVersion";
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
 
+    /** The key used to send message to GCM, which is registered on Google API Console */
+    private static final String SEND_API_KEY = "AIzaSyCxS2RGz9JGDzGBeBJrVGeEUghcX0omijE"; 
+    
     /**
      * Every Android app using Google Play service API must be registered on Google API Console
      * to obtain an API Key. Meanwhile, Google also generates a project number for you app.
@@ -225,19 +231,17 @@ public class GcmActivity extends Activity {
                 @Override
                 protected String doInBackground(Void... params) {
                     String status = "";
-                    try {
-                        String message = mMessageBox.getText().toString();
-                        if (message != null && message.length() > 0) {
-                            Bundle data = new Bundle();
-                            data.putString(EXTRA_MESSAGE, message); 
-                            String id = Integer.toString(Utils.getMessageId());
-                            mGCM.send(SENDER_ID + "@gcm.googleapis.com", id, data);
-                            status = "Sent message success.";
-                        } else {
-                            status = "Please input message.";
-                        }
-                    } catch (IOException ex) {
-                        status = "Error :" + ex.getMessage();
+                    if (mRegisterId == null || mRegisterId.length() == 0) {
+                        status = "mRegisterId = null, please wait device registration completed !";
+                        return status;
+                    }
+                    
+                    String message = mMessageBox.getText().toString();
+                    if (message != null && message.length() > 0) {
+                        //status = sendUpstreamMessageToThirdPartyServer(message);
+                        status = sendPayloadMessageToClientApp(mRegisterId, message);
+                    } else {
+                        status = "Please input message.";
                     }
                     return status;
                 }
@@ -284,4 +288,57 @@ public class GcmActivity extends Activity {
     private void sendRegistrationIdToBackend() {
         // Do nothing.
     }
+    
+    /**
+     * Send upstream message to the 3rd party server from GCM client app.
+     * http://developer.android.com/google/gcm/client.html#sample-send
+     */
+    private String sendUpstreamMessageToThirdPartyServer(String msgData) {
+        String status = null;
+        Bundle data = new Bundle();
+        data.putString(EXTRA_MESSAGE, msgData); 
+        String id = Integer.toString(Utils.getMessageId());
+        try {
+            mGCM.send(SENDER_ID + "@gcm.googleapis.com", id, data);
+            status = "Sent message success.";
+        } catch (IOException e) {
+            status = "Error :" + e.getMessage();
+        }
+        return status;
+    }
+    
+    /**
+     * Send message to the GCM client app from 3rd party server.
+     * http://developer.android.com/google/gcm/http.html
+     */
+    private String sendPayloadMessageToClientApp(String registerId, String msgData) {
+        Result result = null;
+        final int retries = 3;
+        String status = null;
+        try {
+            Message message = new Message.Builder()
+            .collapseKey("1")
+            .timeToLive(3)
+            .delayWhileIdle(true)
+            .addData("message", msgData).build();
+
+            Sender sender = new Sender(SEND_API_KEY);    
+            result = sender.send(message, registerId, retries);   
+            if (result.getErrorCodeName() == null) {
+                Log.e(TAG, "############## GCM Notification is sent successfully ##############");
+                status = "Sent message success.";
+            } else {
+                Log.e(TAG, "############## Error occurred while sending GCM Notification :" + result.getErrorCodeName() + "##############");
+                status = "Error :" + result.getErrorCodeName();
+            }
+        } catch (InvalidRequestException e) {
+            status = "Invalid Request :" + e.getMessage();
+        } catch (IOException e) {
+            status = "IO Exception :" + e.getMessage();
+        }
+        return status;
+    }
+    
 }
+
+

@@ -21,8 +21,8 @@
     <!-- Creates a custom permission so only this app can receive its messages.
      NOTE: the permission must be called PACKAGE.permission.C2D_MESSAGE, where PACKAGE 
      is the application's package name. -->
-    <permission android:name="com.baochu.androidassignment.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-    <uses-permission android:name="com.baochu.androidassignment.permission.C2D_MESSAGE" />
+    <permission android:name="com.baochu.assignment.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.baochu.assignment.permission.C2D_MESSAGE" />
     
     <!-- IGetuiSDK Push Notification service permission -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -58,11 +58,6 @@
         </activity>
         
         <activity android:name="com.baochu.androidassignment.album.PhotoActivity"
-            android:launchMode="singleTop" 
-            android:screenOrientation="portrait" >
-        </activity>
-        
-        <activity android:name="com.baochu.androidassignment.map.OldMapActivity"
             android:launchMode="singleTop" 
             android:screenOrientation="portrait" >
         </activity>
@@ -108,7 +103,8 @@
             <intent-filter>
                 <!-- Receives the actual messages. -->
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <category android:name="com.baochu.androidassignment" />
+                <!-- action android:name="com.google.android.c2dm.intent.REGISTRATION"/ -->
+                <category android:name="com.baochu.assignment" />
             </intent-filter>
         </receiver>
         

@@ -16,6 +16,7 @@
 package com.baochu.androidassignment.notification;
 
 import com.baochu.assignment.R;
+import com.baochu.androidassignment.Utils;
 import com.baochu.androidassignment.login.MainActivity;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
@@ -41,7 +42,6 @@ public class GcmIntentService extends IntentService {
     private static final String TAG = "GcmIntentService";
     private static final String MESSAGE_ID_EXTRA="google.message_id";
     String mMessageType = null;
-    public int mMessageId = 0;
     private NotificationManager mNotificationManager;
 
     public GcmIntentService() {
@@ -55,10 +55,6 @@ public class GcmIntentService extends IntentService {
         // The getMessageType() intent parameter must be the intent you received
         // in your BroadcastReceiver.
         mMessageType = gcm.getMessageType(intent);
-        String msgId = extras.getString(MESSAGE_ID_EXTRA);
-        if (msgId != null) {
-            mMessageId = Integer.valueOf(msgId);
-        }
         
         if (!extras.isEmpty()) {  // has effect of unparcelling Bundle
             /*
@@ -77,7 +73,12 @@ public class GcmIntentService extends IntentService {
                 //####################################################################
 
                 // Post notification of received message.
-                sendNotification("Received GCM message: " + extras.toString());
+                String message = extras.getString("message");
+                if (message == null || message.length() == 0) {
+                    message = "Receive null GCM message !";
+                }
+                sendNotification(message);
+                
                 Log.i(TAG, "Received: " + extras.toString());
             }
         }
@@ -87,12 +88,13 @@ public class GcmIntentService extends IntentService {
 
     /** Issues a notification to inform the user */
     private void sendNotification(String msg) {
+        int msgId = Utils.getMessageId();
         mNotificationManager = (NotificationManager)this.getSystemService(Context.NOTIFICATION_SERVICE);
         Intent intent = new Intent(this, MainActivity.class);
         // set intent so it does not start a new activity
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         intent.putExtra(GcmActivity.EXTRA_MESSAGE, msg);
-        PendingIntent contentIntent = PendingIntent.getActivity(this, mMessageId, intent, 0);
+        PendingIntent contentIntent = PendingIntent.getActivity(this, msgId, intent, 0);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
         .setSmallIcon(R.drawable.ic_stat_gcm)
@@ -104,7 +106,7 @@ public class GcmIntentService extends IntentService {
         .setAutoCancel(true);
 
         builder.setContentIntent(contentIntent);
-        mNotificationManager.notify(mMessageId, builder.build());
+        mNotificationManager.notify(msgId, builder.build());
     }
 
 }
